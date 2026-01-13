@@ -1,324 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Talent Tailor and Textiles Trading L.L.C | Custom Tailoring Since 1988</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Cut Lab | Premium Grooming</title>
 
-  <meta name="description" content="Premium custom tailoring in Dubai since 1988. Bespoke suits, tuxedos, blazers, safari suits, and fine fabrics." />
-  <meta name="keywords" content="Tailor in Dubai, Custom Suits Dubai, Bespoke Tailoring Dubai" />
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+}
 
-  <style>
-    :root {
-      --primary: #2a9d8f;
-      --secondary: #f6bd60;
-      --accent: #e76f51;
-      --white: #ffffff;
-      --green: #06d6a0;
-      --soft: #a8dadc;
-      --dark: #1f2933;
-    }
+header {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+header h1 {
+  margin: 0;
+  letter-spacing: 2px;
+}
 
-    body {
-      background: var(--white);
-      color: var(--dark);
-      line-height: 1.6;
-    }
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+.card {
+  background: #1a1a1a;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
 
-    header {
-      background: var(--primary);
-      color: var(--white);
-      padding: 20px 0;
-    }
+button {
+  background: #c9a24d;
+  border: none;
+  padding: 10px 16px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-    }
+button:hover {
+  background: #e0b860;
+}
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: none;
+}
 
-    nav h1 {
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-    }
-
-    nav ul li a {
-      font-size: 0.95rem;
-    }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(
-          rgba(42,157,143,0.85),
-          rgba(42,157,143,0.85)
-        ),
-        url("image.jpg") center / cover no-repeat;
-      color: var(--white);
-      padding: 110px 0;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      max-width: 720px;
-      margin: auto;
-      margin-bottom: 30px;
-      font-size: 1.1rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 26px;
-      border-radius: 4px;
-      font-weight: bold;
-      margin: 6px;
-    }
-
-    .btn-primary {
-      background: var(--secondary);
-      color: var(--dark);
-    }
-
-    .btn-whatsapp {
-      background: var(--green);
-      color: var(--dark);
-    }
-
-    section {
-      padding: 70px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .section-title h3 {
-      font-size: 2rem;
-      color: var(--primary);
-    }
-
-    /* ABOUT */
-    .about p {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      font-size: 1.05rem;
-    }
-
-    /* SERVICES */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
-
-    .service-card {
-      background: var(--soft);
-      padding: 25px;
-      border-radius: 6px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .service-card h4 {
-      margin-bottom: 10px;
-    }
-
-    /* GALLERY */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 6px;
-      object-fit: cover;
-      height: 260px;
-    }
-
-    /* CONTACT */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 320px;
-      border: none;
-      border-radius: 6px;
-    }
-
-    footer {
-      background: var(--primary);
-      color: var(--white);
-      padding: 25px 0;
-      text-align: center;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: var(--green);
-      color: var(--dark);
-      padding: 15px 18px;
-      border-radius: 50%;
-      font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  font-size: 14px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="container">
-    <nav>
-      <h1>Talent Tailor</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <h1>THE CUT LAB</h1>
+  <p>Precision Grooming. Confidence.</p>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <h2>Custom Tailoring Excellence Since 1988</h2>
-    <p>
-      Premium bespoke tailoring in Dubai, crafted with precision,
-      quality fabrics, and decades of trusted experience.
-    </p>
-    <a href="#contact" class="btn btn-primary">Book an Appointment</a>
-    <a href="https://wa.me/971569266275" class="btn btn-whatsapp">WhatsApp Us</a>
+<section>
+  <h2>Book an Appointment</h2>
+
+  <div class="card">
+    <label>Service</label>
+    <select id="service">
+      <option value="">Select Service</option>
+      <option value="Haircut">Haircut – 50 AED</option>
+      <option value="Beard">Beard Trim – 30 AED</option>
+      <option value="Grooming">Full Grooming – 80 AED</option>
+    </select>
+
+    <label>Stylist</label>
+    <select id="stylist">
+      <option value="">Any Stylist</option>
+      <option value="Alex">Alex</option>
+      <option value="Sam">Sam</option>
+      <option value="John">John</option>
+    </select>
+
+    <label>Date</label>
+    <input type="date" id="date" />
+
+    <label>Time</label>
+    <select id="time">
+      <option value="">Select Time</option>
+      <option>10:00 AM</option>
+      <option>11:00 AM</option>
+      <option>12:00 PM</option>
+      <option>2:00 PM</option>
+      <option>3:00 PM</option>
+      <option>4:00 PM</option>
+    </select>
+
+    <label>Your Name</label>
+    <input type="text" id="name" placeholder="Full Name" />
+
+    <label>Phone Number</label>
+    <input type="tel" id="phone" placeholder="+971..." />
+
+    <button onclick="bookNow()">Confirm & Pay</button>
   </div>
+
+  <div id="confirmation"></div>
 </section>
 
-<section id="about" class="about">
-  <div class="container">
-    <div class="section-title">
-      <h3>About Us</h3>
-    </div>
-    <p>
-      Talent Tailor and Textiles Trading L.L.C is a trusted tailoring house in Dubai,
-      serving generations of customers since 1988. We focus on perfect fit,
-      premium fabrics, and honest craftsmanship.
-    </p>
-  </div>
+<section>
+  <h2>Admin (Demo View)</h2>
+  <div class="card" id="adminBookings"></div>
 </section>
 
-<section id="services">
-  <div class="container">
-    <div class="section-title">
-      <h3>Our Services</h3>
-    </div>
+<div class="footer">
+  © 2026 The Cut Lab | Dubai, UAE
+</div>
 
-    <div class="services-grid">
-      <div class="service-card"><h4>Suit</h4><p>Precision-cut bespoke suits.</p></div>
-      <div class="service-card"><h4>Tuxedo</h4><p>Formal tailoring with elegance.</p></div>
-      <div class="service-card"><h4>Blazer</h4><p>Classic and modern styles.</p></div>
-      <div class="service-card"><h4>Safari</h4><p>Comfortable tailored safari suits.</p></div>
-      <div class="service-card"><h4>Waist Coat</h4><p>Fine detailing and structure.</p></div>
-      <div class="service-card"><h4>Pants</h4><p>Perfect balance and comfort.</p></div>
-      <div class="service-card"><h4>Shirt</h4><p>Premium bespoke shirts.</p></div>
-      <div class="service-card"><h4>Suiting</h4><p>Wide range of suiting fabrics.</p></div>
-      <div class="service-card"><h4>Shirting</h4><p>Fine shirting materials.</p></div>
-    </div>
-  </div>
-</section>
+<script>
+let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
 
-<section id="gallery">
-  <div class="container">
-    <div class="section-title">
-      <h3>Gallery</h3>
-    </div>
+function bookNow() {
+  const service = document.getElementById("service").value;
+  const stylist = document.getElementById("stylist").value;
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
 
-    <div class="gallery-grid">
-      <img src="gallery1.jpg" alt="Custom tailoring work">
-      <img src="gallery2.jpg" alt="Suit stitching detail">
-      <img src="gallery3.jpg" alt="Finished bespoke suit">
-      <img src="gallery4.jpg" alt="Fabric selection">
-    </div>
-  </div>
-</section>
+  if (!service || !date || !time || !name || !phone) {
+    alert("Please fill all required fields.");
+    return;
+  }
 
-<section id="contact">
-  <div class="container">
-    <div class="section-title">
-      <h3>Contact & Location</h3>
-    </div>
+  const booking = {
+    service,
+    stylist: stylist || "Any",
+    date,
+    time,
+    name,
+    phone,
+    status: "Paid"
+  };
 
-    <div class="contact-grid">
-      <div>
-        <p><strong>Phone:</strong> 0429777100</p>
-        <p><strong>WhatsApp:</strong> 0569266275</p>
-        <p><strong>Email:</strong> info@talenttailorsdxb.ae</p>
-        <p>
-          <strong>Address:</strong><br>
-          Near Abu Baker Al Siddique Metro Station,<br>
-          Next to United Hyper Market,<br>
-          P.O. Box 64100, Dubai
-        </p>
+  bookings.push(booking);
+  localStorage.setItem("bookings", JSON.stringify(bookings));
+
+  document.getElementById("confirmation").innerHTML = `
+    <div class="card">
+      <h3>Booking Confirmed</h3>
+      <p>Thank you, ${name}</p>
+      <p>${service} with ${booking.stylist}</p>
+      <p>${date} at ${time}</p>
+      <p>Payment Status: Paid</p>
+    </div>
+  `;
+
+  loadAdmin();
+}
+
+function loadAdmin() {
+  let html = "";
+  bookings.forEach((b, i) => {
+    html += `
+      <div class="card">
+        <strong>${b.name}</strong><br/>
+        ${b.service} | ${b.stylist}<br/>
+        ${b.date} – ${b.time}<br/>
+        Status: ${b.status}
       </div>
+    `;
+  });
+  document.getElementById("adminBookings").innerHTML = html;
+}
 
-      <iframe
-        src="https://maps.google.com/maps?q=Abu%20Baker%20Al%20Siddique%20Metro%20Station&t=&z=15&ie=UTF8&iwloc=&output=embed">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>Talent Tailor and Textiles Trading L.L.C</p>
-  <p>Serving Dubai with fine tailoring since 1988</p>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/971569266275">WA</a>
+loadAdmin();
+</script>
 
 </body>
 </html>
